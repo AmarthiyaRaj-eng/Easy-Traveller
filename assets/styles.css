@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+    padding: 15px 20px;
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+
+.navbar button {
+    height: 50px;
+    width: 100px;
+
+    background-color: #8E51FF;
+    color: white;
+
+    border: 2px solid #1f1f1f;
+    border-radius: 50px;
+
+    box-shadow: 6px 6px 0 #1f1f1f;
+
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.heading {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-family: "General Sans", sans-serif;
+}
+
+.front-heading {
+    font-size: clamp(40px, 8vw, 75px);
+    margin-bottom: 20px;
+
+    font-family: "Alien Block", sans-serif;
+}
+
+.front-description {
+    width: min(90%, 500px);
+
+    text-align: center;
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.description {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    gap: 15px;
+}
+
+.d-heading {
+    font-size: clamp(32px, 6vw, 50px);
+
+    margin-bottom: 25px;
+
+    font-family: "Science Gothic", sans-serif;
+
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+.d-details {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+.d1,
+.d2,
+.d3 {
+    width: 350px;
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border: 2px solid #1f1f1f;
+    border-radius: 25px;
+
+    background-color: aliceblue;
+
+    box-shadow: 6px 6px #1f1f1f;
+
+    font-family: "Roboto Mono", monospace;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.m-content {
+    width: 100%;
+    min-height: 300px;
+
+    background-color: #8000d9;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 40px 20px;
+}
+
+.c-heading {
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.c1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+
+    color: aliceblue;
+
+    text-align: center;
+}
+
+.m-content button {
+    height: 75px;
+    width: 175px;
+
+    background-color: aliceblue;
+
+    border: 2px solid #1f1f1f;
+    border-radius: 25px;
+
+    box-shadow: 6px 6px 0 #1f1f1f;
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    position: relative;
+    left: 0.1%;
+    box-shadow: 0px 0px 0 #1f1f1f;
+    border: 2px solid #1f1f1f;
+    transform: translateY(4px);
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar button {
+        width: 90px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .heading {
+        min-height: 400px;
+        padding: 30px 20px;
+    }
+
+    .front-description {
+        width: 95%;
+    }
+
+    .d-details {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .d1,
+    .d2,
+    .d3 {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .m-content {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .navbar button {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .heading {
+        min-height: 350px;
+        padding: 20px;
+    }
+
+    .front-description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .description {
+        padding: 30px 15px;
+    }
+
+    .d1,
+    .d2,
+    .d3 {
+        width: 100%;
+        min-height: auto;
+
+        padding: 20px;
+
+        font-size: 15px;
+    }
+
+    .m-content {
+        min-height: 250px;
+        padding: 30px 15px;
+    }
+
+    .m-content button {
+        width: 150px;
+        height: 60px;
+        font-size: 14px;
+    }
+}

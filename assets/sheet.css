@@ -1,0 +1,216 @@
+.card{
+    width:60%;
+    height:auto;
+    border-radius:25px;
+    border:2px solid #1f1f1f;
+    padding:25px 35px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap:10px;
+    box-sizing:border-box;
+    background-color:aliceblue;
+}
+
+.card h1{
+    font-family:"Inconsolata", monospace;
+    font-weight:bold;
+    text-align:start;
+}
+
+.card h4{
+    font-family:"Inconsolata", monospace;
+    font-weight:400;
+}
+
+.card p{
+    font-family:"Inconsolata", monospace;
+    font-weight:700;
+    color:#1f1f1f;
+    font-size:17px;
+    line-height:1.5;
+    width:100%;
+    margin:8px 0;
+}
+
+.description{
+    width:75%;
+    height:auto;
+    overflow:visible;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+}
+
+.posted-by{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:25%;
+    height:50px;
+    border:2px solid #1f1f1f;
+    border-radius:25px;
+    background:aliceblue;
+    position:relative;
+    left:40%;
+}
+
+.posted-by a{
+    font-family:"Roboto Mono", monospace;
+    font-size:20px;
+    color:#1f1f1f;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.posted-by a:hover{
+    text-decoration:underline;
+}
+
+.card button{
+    background:#8E51FF;
+    border:2px solid #1f1f1f;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:4px 4px 0 #1f1f1f;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card button:hover{
+    transform:translateY(4px);
+    box-shadow:0 2px 0 #1f1f1f;
+}
+
+.view-review{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:20px;
+    font-family:"Roboto Mono", monospace;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    position: relative;
+    left: 50px;
+}
+
+.container form{
+    width:60%;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.add-bar{
+    width:75%;
+}
+
+.profile-btn{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid #1f1f1f;
+    background:#8E51FF;
+    color:white;
+    font-family:"Roboto Mono", monospace;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:5px 5px 0 #1f1f1f;
+}
+
+@media (max-width:935px){
+
+    .posted-by{
+        width:175px;
+        left:0;
+    }
+
+    .view-review{
+        width:50px;
+        height:50px;
+    }
+
+}
+
+.card-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:15px;
+}
+
+.like-btn{
+    height:50px;
+    min-width:90px;
+    padding:0 15px;
+    background:#8E51FF;
+    color:#fff;
+    border:2px solid #1f1f1f;
+    border-radius:50px;
+    font-family:"Roboto Mono", monospace;
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    box-shadow:4px 4px 0 #1f1f1f;
+    transition:.3s;
+}
+
+.like-btn:hover{
+    transform:translateY(4px);
+    box-shadow:0 2px 0 #1f1f1f;
+}
+
+.like-count{
+    margin-left:8px;
+    font-size:16px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.view-review{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+@media(max-width:768px){
+
+    .card-actions{
+        gap:10px;
+    }
+
+    .like-btn{
+        min-width:80px;
+        height:45px;
+        font-size:16px;
+    }
+
+    .view-review{
+        width:45px;
+        height:45px;
+    }
+
+}
+
+.card-footer{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:15px;
+}
+
+

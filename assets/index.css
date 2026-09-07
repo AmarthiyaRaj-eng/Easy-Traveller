@@ -1,0 +1,185 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        linear-gradient(rgba(142, 81, 255, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(142, 81, 255, 0.12) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+    animation: gridMove 1s linear infinite;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes gridMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 40px 40px;
+    }
+}
+
+.sign-in,
+.sign-out {
+    background-color: white;
+    color: black;
+    border: 2px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+.active {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.heading {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+
+    text-align: center;
+
+    font-family: "General Sans", sans-serif;
+    padding: 30px;
+
+}
+
+.front-heading {
+    font-size: clamp(30px, 8vw, 55px);
+    margin-bottom: 10px;
+    font-family: "Alien Block", sans-serif;
+}
+
+.sin-sout {
+    height: 59px;
+    width: 448px;
+    border: 2px solid #1f1f1f;
+    box-shadow: 6px 6px 0 #1f1f1f;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    gap: 5px;
+}
+
+.sin-sout button {
+    height: 48px;
+    width: 214.4px;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+}
+
+.sin-sout button.active {
+    background: #1f1f1f;
+    color: white;
+}
+
+.form-in {
+    height: 350px;
+    width: 448px;
+    background-color: aliceblue;
+    box-shadow: 6px 6px 0 #1f1f1f;
+    border: 2px solid #1f1f1f;
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.form-in p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    font-weight: 1000;
+    border-radius: 10px;
+}
+
+.form-in input {
+    height: 51px;
+    width: 380px;
+    border-radius: 25px;
+    border: 2px solid #1f1f1f;
+    padding-left: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.form-out {
+    height: 500px;
+    width: 450px;
+    background-color: aliceblue;
+    box-shadow: 6px 6px 0 #1f1f1f;
+    border: 2px solid #1f1f1f;
+    margin-top: 2%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+.form-out input {
+    height: 51px;
+    width: 380px;
+    border-radius: 25px;
+    border: 2px solid #1f1f1f;
+    padding-left: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.form-out p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    font-weight: 1000;
+    border-radius: 10px;
+}
+
+.login , .create{
+    height: 59px;
+    width: 380px;
+    background-color: #8E51FF;
+    border: 2px solid #1f1f1f;
+    box-shadow: 6px 6px 0 #1f1f1f;
+    border-radius: 35px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+}
